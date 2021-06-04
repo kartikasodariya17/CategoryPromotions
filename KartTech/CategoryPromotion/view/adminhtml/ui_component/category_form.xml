@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="category-promotion">
+
+        <!-- Promotion Tab in category detail page -->
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Promotion</item>
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="sortOrder" xsi:type="number">30</item>
+            </item>
+        </argument>
+
+        <!-- Promotion Title Attribute -->
+        <field name="promotions_title" sortOrder="10" formElement="input">
+            <settings>
+                <label translate="true">Title</label>
+                <dataScope>promotions_title</dataScope>
+                <dataType>text</dataType>
+                <required>false</required>
+            </settings>
+        </field>
+
+        <!-- Promotion SubTitle Attribute -->
+        <field name="promotions_subtitle" sortOrder="20" formElement="input">
+            <settings>
+                <label translate="true">Subtitle</label>
+                <dataScope>promotions_subtitle</dataScope>
+                <dataType>text</dataType>
+                <required>false</required>
+            </settings>
+        </field>
+
+        <!-- Promotion Action URL Attribute -->
+        <field name="promotions_actionurl" sortOrder="30" formElement="input">
+            <settings>
+                <label translate="true">Action URL</label>
+                <dataScope>promotions_actionurl</dataScope>
+                <dataType>text</dataType>
+                <required>false</required>
+            </settings>
+        </field>
+
+        <!-- Promotion Action Title Attribute -->
+        <field name="promotions_actiontitle" sortOrder="40" formElement="input">
+            <settings>
+                <label translate="true">Action Title</label>
+                <dataScope>promotions_actiontitle</dataScope>
+                <dataType>text</dataType>
+                <required>false</required>
+            </settings>
+        </field>
+
+        <!-- Promotion Promo Type Attribute -->
+        <field name="promotions_promotype" sortOrder="50" formElement="input">
+            <settings>
+                <label translate="true">Promo Type</label>
+                <dataScope>promotions_promotype</dataScope>
+                <dataType>text</dataType>
+                <required>false</required>
+            </settings>
+        </field>
+
+        <!-- Promotion Background color picker Attribute -->
+        <field name="promotions_bg_color" sortOrder="60" formElement="colorPicker">
+            <settings>
+                <label translate="true">BG Color</label>
+                <componentType>colorPicker</componentType>
+                <dataScope>promotions_bg_color</dataScope>
+                <dataType>text</dataType>
+            </settings>
+            <formElements>
+                <colorPicker>
+                    <settings>
+                        <colorPickerMode>full</colorPickerMode>
+                        <colorFormat>hex</colorFormat>
+                    </settings>
+                </colorPicker>
+            </formElements>
+        </field>
+
+        <!-- Promotion text color picker Attribute -->
+        <field name="promotions_text_color" sortOrder="70" formElement="colorPicker">
+            <settings>
+                <label translate="true">Text Color</label>
+                <componentType>colorPicker</componentType>
+                <dataScope>promotions_text_color</dataScope>
+                <dataType>text</dataType>
+            </settings>
+            <formElements>
+                <colorPicker>
+                    <settings>
+                        <colorPickerMode>full</colorPickerMode>
+                        <colorFormat>hex</colorFormat>
+                    </settings>
+                </colorPicker>
+            </formElements>
+        </field>
+        
+    </fieldset>
+</form>
